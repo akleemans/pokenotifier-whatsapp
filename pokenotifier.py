@@ -2,6 +2,7 @@ import urllib2
 import time
 import json
 import os
+import subprocess
 
 def download(url):
     f = urllib2.urlopen(url)
@@ -11,9 +12,10 @@ def download(url):
 
 def send_whatsapp(nr, msg):
     command = 'yowsup/yowsup-cli demos -l '+config['whatsapp']['sender']
-    command += ':'+config['whatsapp']['sender_pw']+' -s ' + nr + ' "' + msg + '"'
-    os.system(command)
+    command += ':'+config['whatsapp']['sender_pw']+' -M -s ' + nr + ' "' + msg + '"'
+    subprocess.call(command, shell=True)
     print 'Whatsapp sent.'
+    time.sleep(2)
 
 def load_config():
     global config, query_url
