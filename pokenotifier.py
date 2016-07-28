@@ -64,7 +64,7 @@ def find_pokemon():
             t = t/1000.0
             m = int(t/60.0)
             s = int(t - m*60.0)
-            link = 'https://www.google.ch/maps?q=loc:' + str(pokemon['latitude']) + ',' + str(pokemon['longitude'])
+            link = 'https://maps.google.com/maps?q=loc:' + str(pokemon['latitude']) + ',' + str(pokemon['longitude'])
             entry = {'pokemon_name': pokemon['pokemon_name'], 'pokemon_id': pokemon['pokemon_id'], 'lon': pokemon['longitude'], 'lat': pokemon['latitude'], 'encounter_id': pokemon['encounter_id']}
 
             if entry not in history:
