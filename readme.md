@@ -1,6 +1,6 @@
 # PokeNotifier-Whatsapp
 
-Notifier for Pokemon Go, get updates about appearing pokemon in your city via Whatsapp, based on [PokemonGo-Map](https://github.com/AHAAAAAAA/PokemonGo-Map).
+Notifier for Pokemon Go, get updates about appearing pokemon in your city via Whatsapp, based on [PokemonGo-Map](https://github.com/AHAAAAAAA/PokemonGo-Map). More about it in this [blog post](https://www.kleemans.ch/whatsapp-notifier-for-pokemon-go).
 
 ![Whatsapp](whatsapp.png)
 
