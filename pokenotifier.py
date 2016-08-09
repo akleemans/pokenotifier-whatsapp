@@ -39,7 +39,7 @@ def main():
             try:
                 find_pokemon()
             except (urllib2.HTTPError, urllib2.URLError) as error:
-                print 'Some error occured, trying again later: ', error.read()
+                print 'Some error occured, trying again later...'
             print 'Sleeping.'
             time.sleep(config['repetition']['delay_sec'])
 
